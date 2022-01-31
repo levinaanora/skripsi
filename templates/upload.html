@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Object Detection</title>
+    <title>3 Temples Detection</title>
 </head>
-<body background = "/static/screen.png">
+<body background = "/static/screen.jpg">
     <div class="container">
       <div class="row">
         <div class="col" align = "center">
@@ -12,7 +12,7 @@
     <form action="/upload-image" method="POST" enctype="multipart/form-data">
 
     <div class="form-group">
-              <label>Select image</label>
+              <label>Masukkan Foto Candi</label>
               <div class="custom-file">
                 <input type="file" class="custom-file-input" name="image"
 
@@ -20,7 +20,7 @@
                 <label class="custom-file-label" for="image">Select image...</label>
               </div>
             </div>
-    <button type="submit" class="btn btn-primary">Get Result</button>
+    <button type="submit" class="btn btn-primary">Menampilkan Hasil</button>
     </form>
     <img src="{{ url_for('send_uploaded_file', filename=uploaded_image) }}" />
         </div>
